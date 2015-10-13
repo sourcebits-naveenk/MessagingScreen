@@ -14,6 +14,9 @@
 		D0DD94301BC6926B00240F6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DD942F1BC6926B00240F6B /* Images.xcassets */; };
 		D0DD94331BC6926B00240F6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0DD94311BC6926B00240F6B /* LaunchScreen.xib */; };
 		D0DD943F1BC6926B00240F6B /* MessagingScreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DD943E1BC6926B00240F6B /* MessagingScreenTests.m */; };
+		D0DD944B1BC7E85B00240F6B /* keyboardAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DD944A1BC7E85B00240F6B /* keyboardAnimation.m */; };
+		D0F5BDF01BCCC2F5002ED238 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F5BDEF1BCCC2F5002ED238 /* ContactsViewController.m */; };
+		D0F5BDF61BCCE2B0002ED238 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = D0F5BDF51BCCE2B0002ED238 /* Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,19 @@
 		D0DD94241BC6926B00240F6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D0DD94261BC6926B00240F6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0DD94271BC6926B00240F6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D0DD94291BC6926B00240F6B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D0DD942A1BC6926B00240F6B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D0DD94291BC6926B00240F6B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = MessagingScreen/ViewController.h; sourceTree = "<group>"; };
+		D0DD942A1BC6926B00240F6B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = MessagingScreen/ViewController.m; sourceTree = "<group>"; };
 		D0DD942D1BC6926B00240F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0DD942F1BC6926B00240F6B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D0DD94321BC6926B00240F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D0DD94381BC6926B00240F6B /* MessagingScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessagingScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DD943D1BC6926B00240F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0DD943E1BC6926B00240F6B /* MessagingScreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagingScreenTests.m; sourceTree = "<group>"; };
+		D0DD94491BC7E85B00240F6B /* keyboardAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = keyboardAnimation.h; path = MessagingScreen/keyboardAnimation.h; sourceTree = "<group>"; };
+		D0DD944A1BC7E85B00240F6B /* keyboardAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = keyboardAnimation.m; path = MessagingScreen/keyboardAnimation.m; sourceTree = "<group>"; };
+		D0F5BDEE1BCCC2F5002ED238 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		D0F5BDEF1BCCC2F5002ED238 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		D0F5BDF51BCCE2B0002ED238 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = ../../Images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,11 @@
 		D0DD94161BC6926B00240F6B = {
 			isa = PBXGroup;
 			children = (
+				D0F5BDF11BCCDF0B002ED238 /* Resources */,
+				D0F5BDEE1BCCC2F5002ED238 /* ContactsViewController.h */,
+				D0F5BDEF1BCCC2F5002ED238 /* ContactsViewController.m */,
+				D0DD95271BCBBEA800240F6B /* KeyboardAnimation */,
+				D0DD95261BCBBE2C00240F6B /* ViewController */,
 				D0DD94211BC6926B00240F6B /* MessagingScreen */,
 				D0DD943B1BC6926B00240F6B /* MessagingScreenTests */,
 				D0DD94201BC6926B00240F6B /* Products */,
@@ -83,8 +96,6 @@
 			children = (
 				D0DD94261BC6926B00240F6B /* AppDelegate.h */,
 				D0DD94271BC6926B00240F6B /* AppDelegate.m */,
-				D0DD94291BC6926B00240F6B /* ViewController.h */,
-				D0DD942A1BC6926B00240F6B /* ViewController.m */,
 				D0DD942C1BC6926B00240F6B /* Main.storyboard */,
 				D0DD942F1BC6926B00240F6B /* Images.xcassets */,
 				D0DD94311BC6926B00240F6B /* LaunchScreen.xib */,
@@ -117,6 +128,32 @@
 				D0DD943D1BC6926B00240F6B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0DD95261BCBBE2C00240F6B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0DD94291BC6926B00240F6B /* ViewController.h */,
+				D0DD942A1BC6926B00240F6B /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		D0DD95271BCBBEA800240F6B /* KeyboardAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D0DD94491BC7E85B00240F6B /* keyboardAnimation.h */,
+				D0DD944A1BC7E85B00240F6B /* keyboardAnimation.m */,
+			);
+			name = KeyboardAnimation;
+			sourceTree = "<group>";
+		};
+		D0F5BDF11BCCDF0B002ED238 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0F5BDF51BCCE2B0002ED238 /* Images */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F5BDF61BCCE2B0002ED238 /* Images in Resources */,
 				D0DD942E1BC6926B00240F6B /* Main.storyboard in Resources */,
 				D0DD94331BC6926B00240F6B /* LaunchScreen.xib in Resources */,
 				D0DD94301BC6926B00240F6B /* Images.xcassets in Resources */,
@@ -221,7 +259,9 @@
 			files = (
 				D0DD942B1BC6926B00240F6B /* ViewController.m in Sources */,
 				D0DD94281BC6926B00240F6B /* AppDelegate.m in Sources */,
+				D0F5BDF01BCCC2F5002ED238 /* ContactsViewController.m in Sources */,
 				D0DD94251BC6926B00240F6B /* main.m in Sources */,
+				D0DD944B1BC7E85B00240F6B /* keyboardAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +456,7 @@
 				D0DD94441BC6926B00240F6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0DD94451BC6926B00240F6B /* Build configuration list for PBXNativeTarget "MessagingScreenTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +465,7 @@
 				D0DD94471BC6926B00240F6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

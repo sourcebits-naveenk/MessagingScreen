@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "keyboardAnimation.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITextField *messageTextField;
+@property (weak, nonatomic) IBOutlet UITableView *messagingTableView;
+@property (weak, nonatomic) IBOutlet UINavigationItem *navigationBarName;
+
 
 
 @end
