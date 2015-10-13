@@ -34,14 +34,12 @@
 
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
 {
-    /**
-     *  Return number of sections
-     */
     return 1;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    
     return [contacts count];
 }
 
@@ -60,13 +58,7 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-   /* if ([segue.identifier isEqualToString:@"displayContactDetail"])
-    {
-        NSIndexPath *indexPath = [self.contactsTableView indexPathForSelectedRow];
-        ViewController *destViewController = segue.destinationViewController;
-        //destViewController.navigationBarName.title = [contacts objectAtIndex:indexPath.row];
-       
-    }*/
+   
 }
 
 

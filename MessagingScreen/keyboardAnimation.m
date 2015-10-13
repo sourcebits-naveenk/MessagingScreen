@@ -25,8 +25,12 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 
 CGFloat animatedDistance;
 
-
-
+/**
+ *  Method for animaitng the keyboard
+ *
+ *  @param messagingTextField textfield object
+ *  @param mainView           view controller object
+ */
 + (void)textFieldDidBeginEditing:(UITextField *)messagingTextField inView:(UIViewController*)mainView
 {
     

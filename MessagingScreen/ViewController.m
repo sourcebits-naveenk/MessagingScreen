@@ -27,6 +27,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     messageDataArray = [[NSMutableArray alloc]init];
     _tableViewMessaging.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    _tableViewMessaging.estimatedRowHeight = 44.0;
+    _tableViewMessaging.rowHeight = UITableViewAutomaticDimension;
 }
 
     
@@ -66,7 +68,7 @@
     }
     
     [newCell.textLabel setText:[messageDataArray objectAtIndex:indexPath.row]];
-    
+    newCell.textLabel.numberOfLines = 0;
     return newCell;
 }
 
@@ -75,7 +77,6 @@
 {
     [_txtFieldMessage resignFirstResponder];
     msg = _txtFieldMessage.text;
-    NSLog(@"%@", msg);
     [messageDataArray addObject:msg];
     _txtFieldMessage.text = @"";
     [_tableViewMessaging reloadData];
