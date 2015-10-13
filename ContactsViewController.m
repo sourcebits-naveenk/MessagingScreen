@@ -22,9 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
      contacts = @[@"Naveen", @"Rajesh", @"Harish", @"Suman", @"Charan", @"Kiran", @"Sunawan"];
-    
-//    [self.contactsTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ContactsTableCell"];
-//   [self.contactsTableView registerNib:[UINib nibWithNibName:NSStringFromClass([UITableViewCell class]) bundle:nil] forCellReuseIdentifier:@"ContactsTableCell"];
+     _contactsTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
 }
 
@@ -54,21 +52,21 @@
     UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:contactsTableIdentifier];
 
     cell.textLabel.text = [contacts objectAtIndex:indexPath.row];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
 
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"displayContactDetail"])
+   /* if ([segue.identifier isEqualToString:@"displayContactDetail"])
     {
         NSIndexPath *indexPath = [self.contactsTableView indexPathForSelectedRow];
         ViewController *destViewController = segue.destinationViewController;
-        destViewController.navigationBarName.title = [contacts objectAtIndex:indexPath.row];
+        //destViewController.navigationBarName.title = [contacts objectAtIndex:indexPath.row];
        
-    }
+    }*/
 }
 
 

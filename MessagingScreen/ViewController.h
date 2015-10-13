@@ -11,9 +11,9 @@
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITextField *messageTextField;
-@property (weak, nonatomic) IBOutlet UITableView *messagingTableView;
-@property (weak, nonatomic) IBOutlet UINavigationItem *navigationBarName;
+@property (weak, nonatomic) IBOutlet UITextField *txtFieldMessage;
+@property (weak, nonatomic) IBOutlet UITableView *tableViewMessaging;
+//@property (weak, nonatomic) IBOutlet UINavigationItem *navigationBarName;
 
 
 

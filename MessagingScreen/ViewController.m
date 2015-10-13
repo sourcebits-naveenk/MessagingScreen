@@ -26,8 +26,7 @@
     
     // Do any additional setup after loading the view, typically from a nib.
     messageDataArray = [[NSMutableArray alloc]init];
-    _messagingTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    
+    _tableViewMessaging.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
     
@@ -43,12 +42,12 @@
 }
 - (IBAction)editDidBegan:(id)sender
 {
-    [KeyboardAnimation textFieldDidBeginEditing:_messageTextField inView:self ];
+    [KeyboardAnimation textFieldDidBeginEditing:_txtFieldMessage inView:self ];
 }
 
 - (IBAction)editDidEnd:(id)sender
 {
-    [KeyboardAnimation textFieldDidEndEditing:_messageTextField inView:self];
+    [KeyboardAnimation textFieldDidEndEditing:_txtFieldMessage inView:self];
 }
 
 
@@ -74,11 +73,11 @@
 
 - (IBAction)sendButton:(id)sender
 {
-    [_messageTextField resignFirstResponder];
-    msg = _messageTextField.text;
+    [_txtFieldMessage resignFirstResponder];
+    msg = _txtFieldMessage.text;
     NSLog(@"%@", msg);
     [messageDataArray addObject:msg];
-    _messageTextField.text = @"";
-    [_messagingTableView reloadData];
+    _txtFieldMessage.text = @"";
+    [_tableViewMessaging reloadData];
 }
 @end
